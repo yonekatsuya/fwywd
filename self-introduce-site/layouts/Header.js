@@ -11,7 +11,7 @@ class Header extends Component {
 
     render () {
         return (<>
-            <div className= 'h-20 flex justify-between'>
+            <div className='h-20 flex justify-between'>
                 <div className='w-full'>
                     <img src="logo.png" className='w-40'/>
                 </div>
