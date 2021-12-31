@@ -1,5 +1,8 @@
-export default function Home() {
-  return (
-    <h1>よね</h1>
-  )
-}
+import Layout from '../layouts/Layout';
+
+export default () => (
+  <Layout>
+    temp
+  </Layout>
+);
+
