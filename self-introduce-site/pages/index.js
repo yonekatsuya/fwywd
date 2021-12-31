@@ -2,6 +2,7 @@ import { urlObjectKeys } from 'next/dist/shared/lib/utils';
 import Layout from '../layouts/Layout';
 import AboutSelf from '../components/AboutSelf';
 import Progress from '../components/Progress';
+import Values from '../components/Values';
 
 let test = [
   ['about-1.png', '趣味', 'テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト', '176px'],
@@ -14,6 +15,12 @@ let skills = [
   ['CSS', '30%'],
   ['JavaScript', '60%'],
   ['Python', '80%']
+]
+
+let values = [
+  ['value1.png', '価値観01', 'テキスト1テキスト1テキスト1テキスト1テキスト1テキスト1', true],
+  ['value2.png', '価値観02', 'テキスト2テキスト2テキスト2テキスト2テキスト2テキスト2', true],
+  ['value3.png', '価値観03', 'テキスト3テキスト3テキスト3テキスト3テキスト3テキスト3', false]
 ]
 
 export default () => (
@@ -53,7 +60,7 @@ export default () => (
       <div className="h-full" style={{'width': '15%'}}></div>
     </div>
     {/* ブロック3 */}
-    <div className="bg-bg-skills bg-contain bg-no-repeat -mt-20 mb-20 flex" style={{'height': '650px'}}>
+    <div className="bg-bg-skills bg-contain bg-no-repeat -mt-20 mb-8 flex" style={{'height': '650px'}}>
         <div className="mt-28 w-full flex">
           <div className="w-6/12 text-right">
             <img src="skill.png" className="w-9/12 inline-block pt-12" />
@@ -73,6 +80,22 @@ export default () => (
             </div>
           </div>
         </div>
+    </div>
+    {/* ブロック４ */}
+    <div className="text-center">
+      <div className="inline-block">
+        <span className="table-cell align-middle text-2xl pr-2 tracking-widest font-bold">価値観</span>
+        <span className="table-cell align-middle" style={{'color': '#008c8d'}}>VALUES</span>
+      </div>
+    </div>
+    <div className="text-center">
+      <div className="mt-6 h-96 w-2/3 inline-block bg-white">
+        <div className="flex h-full">
+          {values.map((value) => (
+            <Values src={value[0]} title={value[1]} content={value[2]} border_flg={value[3]} />
+          ))}
+        </div>
+      </div>
     </div>
   </Layout>
 );
