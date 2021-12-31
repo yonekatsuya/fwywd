@@ -1,11 +1,19 @@
 import { urlObjectKeys } from 'next/dist/shared/lib/utils';
 import Layout from '../layouts/Layout';
 import AboutSelf from '../components/AboutSelf';
+import Progress from '../components/Progress';
 
 let test = [
   ['about-1.png', '趣味', 'テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト', '176px'],
   ['about-2.png', '好きな食べ物', 'テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト', '196px'],
   ['about-3.png', '性格', 'テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト', '247px'],
+]
+
+let skills = [
+  ['HTML', '40%'],
+  ['CSS', '30%'],
+  ['JavaScript', '60%'],
+  ['Python', '80%']
 ]
 
 export default () => (
@@ -43,6 +51,28 @@ export default () => (
         </div>
       </div>
       <div className="h-full" style={{'width': '15%'}}></div>
+    </div>
+    {/* ブロック3 */}
+    <div className="bg-bg-skills bg-contain bg-no-repeat -mt-20 mb-20 flex" style={{'height': '650px'}}>
+        <div className="mt-28 w-full flex">
+          <div className="w-6/12 text-right">
+            <img src="skill.png" className="w-9/12 inline-block pt-12" />
+          </div>
+          <div className="w-6/12 ml-6">
+            <div className="h-full w-9/12">
+              <div>
+                <span className="table-cell align-middle text-2xl pr-2 tracking-widest font-bold">スキル</span>
+                <span className="table-cell align-middle" style={{'color': '#008c8d'}}>SKILLS</span>
+              </div>
+              <div className="mt-4">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</div>
+              <div className="h-72 w-full mt-4 bg-white p-7 pr-10">
+                {skills.map((value) => (
+                  <Progress skill={value[0]} status={value[1]} />
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
     </div>
   </Layout>
 );
