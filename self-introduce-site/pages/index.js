@@ -97,6 +97,26 @@ export default () => (
         </div>
       </div>
     </div>
+    {/* ブロック5 */}
+    <div className="bg-bg-future bg-cover bg-no-repeat -mt-64" style={{'height': '570px'}}>
+      <div className="text-center">
+        <div className="mt-80 h-52 w-2/3 inline-block">
+          <div className="flex h-full">
+            <div className="w-1/2 h-full">
+              <div>
+                <span className="table-cell align-middle text-2xl pr-2 tracking-widest font-bold">3年後にやりたいこと</span>
+                <span className="table-cell align-middle" style={{'color': '#008c8d'}}>FUTURE</span>
+              </div>
+              <div className="text-left mt-6 pr-6">
+                テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+              </div>
+            </div>
+            <div className="w-1/2 h-full bg-future bg-cover bg-no-repeat">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </Layout>
 );
 
