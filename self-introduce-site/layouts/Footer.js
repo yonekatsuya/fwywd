@@ -19,7 +19,7 @@ class Footer extends Component {
                     <img src="facebook.png" className="w-5 inline-block" />
                 </div>
                 <div className="mt-5 text-center text-xs">
-                    © 2021 KIKAGAKU
+                    © 2022 KIKAGAKU
                 </div>
             </div>
         </>);
