@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React, { Component } from 'react';
 
 class Values extends Component {
@@ -21,7 +22,13 @@ class Values extends Component {
         <div className='w-1/3 h-full'>
           <div style={this.style}>
             <div className='inline-block'>
-              <img src={this.src} className='w-40' />
+              <Image
+                src={this.src}
+                width={160}
+                height={160}
+                objectFit='contain'
+                alt='価値観を表す画像'
+              />
             </div>
             <div>
               <span className='inline-block mt-3 font-bold'>{this.title}</span>

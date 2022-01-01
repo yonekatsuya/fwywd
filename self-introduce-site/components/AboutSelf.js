@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React, { Component } from 'react';
 
 class AboutSelf extends Component {
@@ -14,7 +15,14 @@ class AboutSelf extends Component {
       <>
         <div className='w-2/6'>
           <div className='text-center'>
-            <img src={this.img} className='inline-block' style={{ width: this.width }} />
+            {/* <img src={this.img} className='inline-block' style={{ width: this.width }} /> */}
+            <Image
+              src={this.img}
+              width={this.width}
+              height={140}
+              objectFit='contain'
+              alt='私を表す画像'
+            />
           </div>
           <div
             className='pt-5 text-xl font-bold tracking-widest text-center'

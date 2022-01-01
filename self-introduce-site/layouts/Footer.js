@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React, { Component } from 'react';
 
 class Footer extends Component {
@@ -12,11 +13,33 @@ class Footer extends Component {
             </div>
           </div>
           <div className='mt-11 h-32 text-center'>
-            <img src='image/logo_white.png' className='inline-block w-24' />
+            <Image
+              src='/image/logo_white.png'
+              width={96}
+              height={130}
+              objectFit='contain'
+              alt='フッターアイコン'
+            />
           </div>
           <div className='mt-10 text-center'>
-            <img src='image/twitter.png' className='inline-block mr-4 w-5' />
-            <img src='image/facebook.png' className='inline-block w-5' />
+            <div className='inline-block mr-5'>
+              <Image
+                src='/image/twitter.png'
+                width={20}
+                height={20}
+                objectFit='contain'
+                alt='Twitterアイコン'
+              />
+            </div>
+            <div className='inline-block'>
+              <Image
+                src='/image/facebook.png'
+                width={20}
+                height={20}
+                objectFit='contain'
+                alt='Facebookアイコン'
+              />
+            </div>
           </div>
           <div className='mt-7 text-xs text-center'>© 2022 KIKAGAKU</div>
         </div>
