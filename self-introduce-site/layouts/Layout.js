@@ -1,15 +1,17 @@
-import React, {Component} from 'react';
-import Header from './Header';
+import React, { Component } from 'react';
 import Footer from './Footer';
+import Header from './Header';
 
 class Layout extends Component {
-    render() {
-        return (<>
-            <Header />
-            {this.props.children}
-            <Footer />
-        </>);
-    }
+  render() {
+    return (
+      <>
+        <Header />
+        {this.props.children}
+        <Footer />
+      </>
+    );
+  }
 }
 
 export default Layout;

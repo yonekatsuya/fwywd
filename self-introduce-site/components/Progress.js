@@ -1,25 +1,38 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 
 class Progress extends Component {
-    constructor(props) {
-        super(props)
-        this.skill = props.skill
-        this.status = props.status
-    }
+  constructor(props) {
+    super(props);
+    this.skill = props.skill;
+    this.status = props.status;
+  }
 
-    render() {
-        return (<>
-            <div style={{'color': '#008c8d'}}>{this.skill}</div>
-            <div className="relative flex pt-1">
-                <div className="inline-block w-full">
-                    <div className="overflow-hidden h-4 mb-4 text-xs flex rounded" style={{'backgroundColor': '#c5eaea'}}>
-                        <div style={{width: this.status, backgroundColor: '#2bb9ba'}} className="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center"></div>
-                    </div>
-                </div>
-                <div className="h-4 flex justify-center items-center text-lg ml-4" style={{'color': '#008c8d'}}>{this.status}</div>
+  render() {
+    return (
+      <>
+        <div style={{ color: '#008c8d' }}>{this.skill}</div>
+        <div className='flex relative pt-1'>
+          <div className='inline-block w-full'>
+            <div
+              className='flex overflow-hidden mb-4 h-4 text-xs rounded'
+              style={{ backgroundColor: '#c5eaea' }}
+            >
+              <div
+                style={{ width: this.status, backgroundColor: '#2bb9ba' }}
+                className='flex flex-col justify-center text-center text-white whitespace-nowrap shadow-none'
+              ></div>
             </div>
-        </>)
-    }
+          </div>
+          <div
+            className='flex justify-center items-center ml-4 h-4 text-lg'
+            style={{ color: '#008c8d' }}
+          >
+            {this.status}
+          </div>
+        </div>
+      </>
+    );
+  }
 }
 
 export default Progress;
