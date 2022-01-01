@@ -13,7 +13,7 @@ class Header extends Component {
         return (<>
             <div className='h-20 flex justify-between'>
                 <div className='w-full'>
-                    <img src="logo.png" className='w-40'/>
+                    <img src="image/logo.png" className='w-40'/>
                 </div>
                 <div className='w-full flex justify-end'>
                     {this.header_menu.map((value) => (

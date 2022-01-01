@@ -7,10 +7,10 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'bg-about': "url('/bg-about.png')",
-        'bg-skills': "url('/bg-skills.png')",
-        'bg-future': "url('/bg-future.png')",
-        'future': "url('/future.png')"
+        'bg-about': "url('/image/bg-about.png')",
+        'bg-skills': "url('/image/bg-skills.png')",
+        'bg-future': "url('/image/bg-future.png')",
+        'future': "url('/image/future.png')"
       }
     },
   },

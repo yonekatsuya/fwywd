@@ -5,9 +5,9 @@ import Progress from '../components/Progress';
 import Values from '../components/Values';
 
 let test = [
-  ['about-1.png', '趣味', 'YouTubeの動画視聴が好きです！特にアイドルの動画を見るのが好きで、　乃木坂46、櫻坂46、日向坂46、BiSHなどが好きです！2021年の紅白歌合戦にBiSHが出ているのを見て、大感動しました。あと、本気でチャレンジしている人の言葉を動画で聞いたり、　　会って話すのが大好きです。', '176px'],
-  ['about-2.png', '好きな食べ物', '玉子焼きしか勝たんです。特に、母が作る玉子焼きが大好きです。あと、「ハントンライス」が好きです。私の出身地である石川県金沢市の郷土料理です。是非調べてみてください！　　あと、カレーライスと、焼肉と、しゃぶしゃぶと、、、、好きな食べ物だらけです！', '196px'],
-  ['about-3.png', '性格', '「これに本気で取り組む！」と決めたら、誰よりも徹底的にやります。常に何かに本気で取り組んでいないと気持ち悪くて、新たなチャレンジを常に求めます。本気のチャレンジが、人生を豊かにすると信じています。あと昔からよく「天然だね」と言われます。', '247px'],
+  ['image/about-1.png', '趣味', 'YouTubeの動画視聴が好きです！特にアイドルの動画を見るのが好きで、　乃木坂46、櫻坂46、日向坂46、BiSHなどが好きです！2021年の紅白歌合戦にBiSHが出ているのを見て、大感動しました。あと、本気でチャレンジしている人の言葉を動画で聞いたり、　　会って話すのが大好きです。', '176px'],
+  ['image/about-2.png', '好きな食べ物', '玉子焼きしか勝たんです。特に、母が作る玉子焼きが大好きです。あと、「ハントンライス」が好きです。私の出身地である石川県金沢市の郷土料理です。是非調べてみてください！　　あと、カレーライスと、焼肉と、しゃぶしゃぶと、、、、好きな食べ物だらけです！', '196px'],
+  ['image/about-3.png', '性格', '「これに本気で取り組む！」と決めたら、誰よりも徹底的にやります。常に何かに本気で取り組んでいないと気持ち悪くて、新たなチャレンジを常に求めます。本気のチャレンジが、人生を豊かにすると信じています。あと昔からよく「天然だね」と言われます。', '247px'],
 ]
 
 let skills = [
@@ -18,15 +18,15 @@ let skills = [
 ]
 
 let values = [
-  ['value1.png', '人生の主人公は、自分', '一生に一度の人生、自分が主人公の物語を、今生きています。何か辛いことがあっても、「物語が面白くなった」とポジティブに捉え、最高の物語にするためにチャレンジを続けることができます。', true],
-  ['value2.png', '「本気」が、人生を豊かに', '「本気」は、人に感動を与えます。そして、何よりも自分自身が感動します。「本気」だからこそ経験できることがたくさんあります。本気で取り組んだ経験は、人生の財産です。', true],
-  ['value3.png', '人生、楽しんだもん勝ち', '人生の限られた時間を、「楽しい」で埋め尽くしたい。「本当の楽しさ」は、本気のチャレンジ、人との触れ合いから生まれる。誰になんと思われようと、楽しければ人生勝ち組。', false]
+  ['image/value1.png', '人生の主人公は、自分', '一生に一度の人生、自分が主人公の物語を、今生きています。何か辛いことがあっても、「物語が面白くなった」とポジティブに捉え、最高の物語にするためにチャレンジを続けることができます。', true],
+  ['image/value2.png', '「本気」が、人生を豊かに', '「本気」は、人に感動を与えます。そして、何よりも自分自身が感動します。「本気」だからこそ経験できることがたくさんあります。本気で取り組んだ経験は、人生の財産です。', true],
+  ['image/value3.png', '人生、楽しんだもん勝ち', '人生の限られた時間を、「楽しい」で埋め尽くしたい。「本当の楽しさ」は、本気のチャレンジ、人との触れ合いから生まれる。誰になんと思われようと、楽しければ人生勝ち組。', false]
 ]
 
 export default () => (
   <Layout>
     {/* ブロック1 */}
-    <div className='flex' style={{'height': '500px', 'background-color': '#6bc2c3'}}>
+    <div className='flex' style={{'height': '500px', 'backgroundColor': '#6bc2c3'}}>
       <div className="w-6/12 flex justify-center items-center text-white tracking-widest">
         <div className="w-full pl-24">
           <div className='text-4xl font-bold'>
@@ -38,7 +38,7 @@ export default () => (
         </div>
       </div>
       <div className="w-6/12">
-        <img src="hero.png" className="inline-block pt-8 ml-24" style={{'width': '520px'}} />
+        <img src="image/hero.png" className="inline-block pt-8 ml-24" style={{'width': '520px'}} />
       </div>
     </div>
     {/* ブロック2 */}
@@ -63,7 +63,7 @@ export default () => (
     <div className="bg-bg-skills bg-contain -mt-20 mb-8 flex" style={{'height': '645px'}}>
         <div className="mt-28 w-full flex">
           <div className="text-right" style={{'width': '45%'}}>
-            <img src="skill.png" className="w-10/12 inline-block pt-12" />
+            <img src="image/skill.png" className="w-10/12 inline-block pt-12" />
           </div>
           <div className="ml-6" style={{'width': '55%'}}>
             <div className="h-full w-9/12">

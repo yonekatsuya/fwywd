@@ -12,11 +12,11 @@ class Footer extends Component {
                     </div>
                 </div>
                 <div className="h-32 mt-11 text-center">
-                    <img src='logo_white.png' className="w-24 inline-block" />
+                    <img src='image/logo_white.png' className="w-24 inline-block" />
                 </div>
                 <div className="mt-10 text-center">
-                    <img src="twitter.png" className="w-5 inline-block mr-4" />
-                    <img src="facebook.png" className="w-5 inline-block" />
+                    <img src="image/twitter.png" className="w-5 inline-block mr-4" />
+                    <img src="image/facebook.png" className="w-5 inline-block" />
                 </div>
                 <div className="mt-7 text-center text-xs">
                     © 2022 KIKAGAKU

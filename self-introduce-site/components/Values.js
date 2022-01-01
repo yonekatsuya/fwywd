@@ -9,7 +9,7 @@ class Values extends Component {
         this.border_flg = props.border_flg;
 
         if (this.border_flg == true) {
-            this.style = {'border-right': '1px solid #6bc2c3'}
+            this.style = {'borderRight': '1px solid #6bc2c3'}
         } else {
             this.style = {}
         }
