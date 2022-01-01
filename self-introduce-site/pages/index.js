@@ -60,7 +60,7 @@ export default () => (
       <div className="h-full" style={{'width': '15%'}}></div>
     </div>
     {/* ブロック3 */}
-    <div className="bg-bg-skills bg-contain bg-no-repeat -mt-20 mb-8 flex" style={{'height': '650px'}}>
+    <div className="bg-bg-skills bg-contain -mt-20 mb-8 flex" style={{'height': '645px'}}>
         <div className="mt-28 w-full flex">
           <div className="text-right" style={{'width': '45%'}}>
             <img src="skill.png" className="w-10/12 inline-block pt-12" />
