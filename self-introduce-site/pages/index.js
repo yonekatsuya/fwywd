@@ -78,7 +78,7 @@ export default function Home() {
         </div>
       </div>
       {/* ブロック2 */}
-      <div className='flex bg-cover bg-bg-about' style={{ height: '620px' }}>
+      <div className='flex bg-cover bg-bg-about' style={{ height: '620px' }} id='about'>
         <div className='h-full' style={{ width: '15%' }}></div>
         <div className='h-full' style={{ width: '70%' }}>
           <div className='text-center' style={{ height: '16%' }}>
@@ -102,7 +102,11 @@ export default function Home() {
         <div className='h-full' style={{ width: '15%' }}></div>
       </div>
       {/* ブロック3 */}
-      <div className='flex -mt-20 mb-8 bg-contain bg-bg-skills' style={{ height: '645px' }}>
+      <div
+        className='flex -mt-20 mb-8 bg-contain bg-bg-skills'
+        style={{ height: '645px' }}
+        id='skills'
+      >
         <div className='flex mt-28 w-full'>
           <div className='text-right' style={{ width: '45%' }}>
             <Image
@@ -138,7 +142,7 @@ export default function Home() {
         </div>
       </div>
       {/* ブロック４ */}
-      <div className='text-center'>
+      <div className='text-center' id='values'>
         <div className='inline-block'>
           <span className='table-cell pr-2 text-2xl font-bold tracking-widest align-middle'>
             価値観
@@ -160,9 +164,12 @@ export default function Home() {
         </div>
       </div>
       {/* ブロック5 */}
-      <div className='-mt-64 bg-no-repeat bg-cover bg-bg-future' style={{ height: '570px' }}>
+      <div
+        className='-mt-64 bg-no-repeat bg-cover bg-bg-future'
+        style={{ height: '570px' }}
+      >
         <div className='text-center'>
-          <div className='inline-block mt-80 w-2/3 h-52'>
+          <div className='inline-block mt-80 w-2/3 h-52' id='future'>
             <div className='flex h-full'>
               <div className='w-1/2 h-full'>
                 <div>

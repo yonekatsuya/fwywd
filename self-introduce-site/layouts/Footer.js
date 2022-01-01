@@ -22,6 +22,7 @@ class Footer extends Component {
                   height={130}
                   objectFit='contain'
                   alt='フッターアイコン'
+                  className='hover:opacity-75 hover:cursor-pointer'
                 />
               </a>
             </Link>
@@ -36,6 +37,7 @@ class Footer extends Component {
                     height={20}
                     objectFit='contain'
                     alt='Twitterアイコン'
+                    className='hover:opacity-75 hover:cursor-pointer'
                   />
                 </a>
               </Link>
@@ -49,6 +51,7 @@ class Footer extends Component {
                     height={20}
                     objectFit='contain'
                     alt='Facebookアイコン'
+                    className='hover:opacity-75 hover:cursor-pointer'
                   />
                 </a>
               </Link>
