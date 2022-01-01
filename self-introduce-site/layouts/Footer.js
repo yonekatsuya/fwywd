@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import React, { Component } from 'react';
 
 class Footer extends Component {
@@ -13,32 +14,44 @@ class Footer extends Component {
             </div>
           </div>
           <div className='mt-11 h-32 text-center'>
-            <Image
-              src='/image/logo_white.png'
-              width={96}
-              height={130}
-              objectFit='contain'
-              alt='フッターアイコン'
-            />
+            <Link href='/'>
+              <a>
+                <Image
+                  src='/image/logo_white.png'
+                  width={96}
+                  height={130}
+                  objectFit='contain'
+                  alt='フッターアイコン'
+                />
+              </a>
+            </Link>
           </div>
           <div className='mt-10 text-center'>
             <div className='inline-block mr-5'>
-              <Image
-                src='/image/twitter.png'
-                width={20}
-                height={20}
-                objectFit='contain'
-                alt='Twitterアイコン'
-              />
+              <Link href='https://google.com'>
+                <a>
+                  <Image
+                    src='/image/twitter.png'
+                    width={20}
+                    height={20}
+                    objectFit='contain'
+                    alt='Twitterアイコン'
+                  />
+                </a>
+              </Link>
             </div>
             <div className='inline-block'>
-              <Image
-                src='/image/facebook.png'
-                width={20}
-                height={20}
-                objectFit='contain'
-                alt='Facebookアイコン'
-              />
+              <Link href='https://www.youtube.com/'>
+                <a>
+                  <Image
+                    src='/image/facebook.png'
+                    width={20}
+                    height={20}
+                    objectFit='contain'
+                    alt='Facebookアイコン'
+                  />
+                </a>
+              </Link>
             </div>
           </div>
           <div className='mt-7 text-xs text-center'>© 2022 KIKAGAKU</div>

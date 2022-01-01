@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import React, { Component } from 'react';
 import MenuList from '../components/Header/MenuList';
 
@@ -10,13 +11,19 @@ class Header extends Component {
       <>
         <div className='flex justify-between h-20'>
           <div className='w-full'>
-            <Image
-              src='/image/logo.png'
-              width={160}
-              height={80}
-              objectFit='contain'
-              alt='ヘッダーアイコン'
-            />
+            {/* <div className='inline-block bg-gray-300'> */}
+            <Link href='/'>
+              <a>
+                <Image
+                  src='/image/logo.png'
+                  width={160}
+                  height={80}
+                  objectFit='contain'
+                  alt='ヘッダーアイコン'
+                />
+              </a>
+            </Link>
+            {/* </div> */}
           </div>
           <div className='flex justify-end w-full'>
             {this.header_menu.map((value) => (
