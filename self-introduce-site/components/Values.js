@@ -23,7 +23,7 @@ class Values extends Component {
                         <img src={this.src} className="w-40" />
                     </div>
                     <div>
-                        <span className="inline-block mt-3">{this.title}</span>
+                        <span className="inline-block mt-3 font-bold">{this.title}</span>
                     </div>
                     <div className="w-10/12 inline-block h-40 mt-3 break-words text-left">
                         {this.content}

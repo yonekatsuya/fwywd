@@ -62,10 +62,10 @@ export default () => (
     {/* ブロック3 */}
     <div className="bg-bg-skills bg-contain bg-no-repeat -mt-20 mb-8 flex" style={{'height': '650px'}}>
         <div className="mt-28 w-full flex">
-          <div className="w-6/12 text-right">
-            <img src="skill.png" className="w-9/12 inline-block pt-12" />
+          <div className="text-right" style={{'width': '45%'}}>
+            <img src="skill.png" className="w-10/12 inline-block pt-12" />
           </div>
-          <div className="w-6/12 ml-6">
+          <div className="ml-6" style={{'width': '55%'}}>
             <div className="h-full w-9/12">
               <div>
                 <span className="table-cell align-middle text-2xl pr-2 tracking-widest font-bold">スキル</span>
