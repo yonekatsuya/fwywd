@@ -2,15 +2,11 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React, { Component } from 'react';
 import MenuList from '../components/Header/MenuList';
+import HeaderCt from '../constants/layouts/HeaderCt';
+
+let headerCt = new HeaderCt();
 
 class Header extends Component {
-  header_menu = [
-    ['ABOUT', 'about'],
-    ['SKILLS', 'skills'],
-    ['VALUES', 'values'],
-    ['FUTURE', 'future'],
-  ];
-
   render() {
     return (
       <>
@@ -30,7 +26,7 @@ class Header extends Component {
             </Link>
           </div>
           <div className='flex justify-end w-full'>
-            {this.header_menu.map((value) => (
+            {headerCt.headerMenu.map((value) => (
               <>
                 <MenuList text={value[0]} id={value[1]} />
               </>
