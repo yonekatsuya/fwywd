@@ -1,6 +1,5 @@
 import { urlObjectKeys } from 'next/dist/shared/lib/utils';
 import Image from 'next/image';
-import styles from '../../styles/pages/Index.module.scss';
 import AboutSelf from '../components/AboutSelf';
 import Progress from '../components/Progress';
 import Values from '../components/Values';
@@ -13,7 +12,7 @@ export default function Index() {
   return (
     <Layout>
       {/* ブロック1 */}
-      <div className={`flex bg-header-green ${styles.h500}`}>
+      <div className={'flex h-[500px] bg-header-green'}>
         <div className='flex justify-center items-center w-6/12 tracking-widest text-white'>
           <div className='pl-24 w-full'>
             <div className='text-4xl font-bold'>【米 勝矢】の自己紹介ページ</div>
@@ -33,10 +32,10 @@ export default function Index() {
         </div>
       </div>
       {/* ブロック2 */}
-      <div className={`flex bg-cover bg-bg-about ${styles.h620}`} id='about'>
-        <div className={`h-full ${styles.w15per}`}></div>
-        <div className={`h-full ${styles.w70per}`}>
-          <div className={`text-center ${styles.h16per}`}>
+      <div className={'flex h-[620px] bg-cover bg-bg-about'} id='about'>
+        <div className={'w-[15%] h-full'}></div>
+        <div className={'w-[70%] h-full'}>
+          <div className={'h-[16%] text-center'}>
             <div className='inline-block pt-8'>
               <span className='table-cell pr-2 text-2xl font-bold tracking-widest align-middle'>
                 私について
@@ -44,7 +43,7 @@ export default function Index() {
               <span className='table-cell align-middle text-text-green'>ABOUT</span>
             </div>
           </div>
-          <div className={`flex justify-between ${styles.h84per}`}>
+          <div className={'flex justify-between h-[84%]'}>
             {indexCt.abouts.map((value) => (
               <>
                 <AboutSelf img={value[0]} title={value[1]} content={value[2]} width={value[3]} />
@@ -52,12 +51,12 @@ export default function Index() {
             ))}
           </div>
         </div>
-        <div className={`h-full ${styles.w15per}`}></div>
+        <div className={'w-[15%] h-full'}></div>
       </div>
       {/* ブロック3 */}
-      <div className={`flex -mt-20 mb-8 bg-contain bg-bg-skills ${styles.h645}`} id='skills'>
+      <div className={'flex -mt-20 mb-8 h-[645px] bg-contain bg-bg-skills'} id='skills'>
         <div className='flex mt-28 w-full'>
-          <div className={`text-right ${styles.w45per}`}>
+          <div className={'w-[45%] text-right'}>
             <Image
               src='/image/skill.png'
               width={500}
@@ -66,7 +65,7 @@ export default function Index() {
               alt='スキルの画像'
             />
           </div>
-          <div className={`ml-6 ${styles.w55per}`}>
+          <div className={'ml-6 w-[55%]'}>
             <div className='w-9/12 h-full'>
               <div>
                 <span className='table-cell pr-2 text-2xl font-bold tracking-widest align-middle'>
@@ -107,7 +106,7 @@ export default function Index() {
         </div>
       </div>
       {/* ブロック5 */}
-      <div className={`-mt-64 bg-no-repeat bg-cover bg-bg-future ${styles.h570}`}>
+      <div className={'-mt-64 h-[570px] bg-no-repeat bg-cover bg-bg-future'}>
         <div className='text-center'>
           <div className='inline-block mt-80 w-2/3 h-52' id='future'>
             <div className='flex h-full'>
