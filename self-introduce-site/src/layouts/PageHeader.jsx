@@ -6,7 +6,7 @@ import HeaderCt from '../constants/layouts/HeaderCt';
 
 let headerCt = new HeaderCt();
 
-class Header extends Component {
+class PageHeader extends Component {
   render() {
     return (
       <>
@@ -38,4 +38,4 @@ class Header extends Component {
   }
 }
 
-export default Header;
+export default PageHeader;

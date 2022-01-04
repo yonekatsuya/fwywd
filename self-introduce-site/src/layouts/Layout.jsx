@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
-import Footer from './Footer';
-import Header from './Header';
+import PageFooter from './PageFooter';
+import PageHeader from './PageHeader';
 
 class Layout extends Component {
   render() {
     return (
       <>
-        <Header />
+        <PageHeader />
         {this.props.children}
-        <Footer />
+        <PageFooter />
       </>
     );
   }
