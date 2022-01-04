@@ -1,11 +1,11 @@
 import { urlObjectKeys } from 'next/dist/shared/lib/utils';
 import Image from 'next/image';
+import styles from '../../styles/pages/Index.module.scss';
 import AboutSelf from '../components/AboutSelf';
 import Progress from '../components/Progress';
 import Values from '../components/Values';
 import IndexCt from '../constants/IndexCt';
 import Layout from '../layouts/Layout';
-import styles from '../styles/pages/Index.module.scss';
 
 let indexCt = new IndexCt();
 
