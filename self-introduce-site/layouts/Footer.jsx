@@ -6,7 +6,7 @@ class Footer extends Component {
   render() {
     return (
       <>
-        <div className='h-96 text-white' style={{ backgroundColor: '#262c3a' }}>
+        <div className='h-96 text-white bg-footer-black'>
           <div className='pt-11 text-center'>
             <div className='inline-block'>
               <span className='table-cell pr-3 text-xs align-middle'>CREATED BY</span>

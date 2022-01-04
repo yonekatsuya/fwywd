@@ -5,10 +5,10 @@ import MenuList from '../components/Header/MenuList';
 
 class Header extends Component {
   header_menu = [
-    ['ABOUT', 'about'], 
-    ['SKILLS', 'skills'], 
-    ['VALUES', 'values'], 
-    ['FUTURE', 'future']
+    ['ABOUT', 'about'],
+    ['SKILLS', 'skills'],
+    ['VALUES', 'values'],
+    ['FUTURE', 'future'],
   ];
 
   render() {

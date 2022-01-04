@@ -15,7 +15,6 @@ class AboutSelf extends Component {
       <>
         <div className='w-2/6'>
           <div className='text-center'>
-            {/* <img src={this.img} className='inline-block' style={{ width: this.width }} /> */}
             <Image
               src={this.img}
               width={this.width}
@@ -24,10 +23,7 @@ class AboutSelf extends Component {
               alt='私を表す画像'
             />
           </div>
-          <div
-            className='pt-5 text-xl font-bold tracking-widest text-center'
-            style={{ color: '#008c8d' }}
-          >
+          <div className='pt-5 text-xl font-bold tracking-widest text-center text-text-green'>
             {this.title}
           </div>
           <div className='flex justify-center'>

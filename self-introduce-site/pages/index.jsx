@@ -4,7 +4,7 @@ import AboutSelf from '../components/AboutSelf';
 import Progress from '../components/Progress';
 import Values from '../components/Values';
 import Layout from '../layouts/Layout';
-
+import styles from '../styles/pages/Index.module.scss';
 let abouts = [
   [
     '/image/about-1.png',
@@ -54,11 +54,11 @@ let values = [
   ],
 ];
 
-export default function Home() {
+export default function Index() {
   return (
     <Layout>
       {/* ブロック1 */}
-      <div className='flex' style={{ height: '500px', backgroundColor: '#6bc2c3' }}>
+      <div className={`flex bg-header-green ${styles.h500}`}>
         <div className='flex justify-center items-center w-6/12 tracking-widest text-white'>
           <div className='pl-24 w-full'>
             <div className='text-4xl font-bold'>【米 勝矢】の自己紹介ページ</div>
@@ -78,20 +78,18 @@ export default function Home() {
         </div>
       </div>
       {/* ブロック2 */}
-      <div className='flex bg-cover bg-bg-about' style={{ height: '620px' }} id='about'>
-        <div className='h-full' style={{ width: '15%' }}></div>
-        <div className='h-full' style={{ width: '70%' }}>
-          <div className='text-center' style={{ height: '16%' }}>
+      <div className={`flex bg-cover bg-bg-about ${styles.h620}`} id='about'>
+        <div className={`h-full ${styles.w15per}`}></div>
+        <div className={`h-full ${styles.w70per}`}>
+          <div className={`text-center ${styles.h16per}`}>
             <div className='inline-block pt-8'>
               <span className='table-cell pr-2 text-2xl font-bold tracking-widest align-middle'>
                 私について
               </span>
-              <span className='table-cell align-middle' style={{ color: '#008c8d' }}>
-                ABOUT
-              </span>
+              <span className='table-cell align-middle text-text-green'>ABOUT</span>
             </div>
           </div>
-          <div className='flex justify-between' style={{ height: '84%' }}>
+          <div className={`flex justify-between ${styles.h84per}`}>
             {abouts.map((value) => (
               <>
                 <AboutSelf img={value[0]} title={value[1]} content={value[2]} width={value[3]} />
@@ -99,16 +97,12 @@ export default function Home() {
             ))}
           </div>
         </div>
-        <div className='h-full' style={{ width: '15%' }}></div>
+        <div className={`h-full ${styles.w15per}`}></div>
       </div>
       {/* ブロック3 */}
-      <div
-        className='flex -mt-20 mb-8 bg-contain bg-bg-skills'
-        style={{ height: '645px' }}
-        id='skills'
-      >
+      <div className={`flex -mt-20 mb-8 bg-contain bg-bg-skills ${styles.h645}`} id='skills'>
         <div className='flex mt-28 w-full'>
-          <div className='text-right' style={{ width: '45%' }}>
+          <div className={`text-right ${styles.w45per}`}>
             <Image
               src='/image/skill.png'
               width={500}
@@ -117,15 +111,13 @@ export default function Home() {
               alt='スキルの画像'
             />
           </div>
-          <div className='ml-6' style={{ width: '55%' }}>
+          <div className={`ml-6 ${styles.w55per}`}>
             <div className='w-9/12 h-full'>
               <div>
                 <span className='table-cell pr-2 text-2xl font-bold tracking-widest align-middle'>
                   スキル
                 </span>
-                <span className='table-cell align-middle' style={{ color: '#008c8d' }}>
-                  SKILLS
-                </span>
+                <span className='table-cell align-middle text-text-green'>SKILLS</span>
               </div>
               <div className='mt-4'>
                 実務経験約1年で、個人でWebアプリを開発してリリースした経験があります。会社の新規事業立ち上げメンバーとして事業運営の経験があり、アプリ開発後に必須の「集客」も得意です。
@@ -147,9 +139,7 @@ export default function Home() {
           <span className='table-cell pr-2 text-2xl font-bold tracking-widest align-middle'>
             価値観
           </span>
-          <span className='table-cell align-middle' style={{ color: '#008c8d' }}>
-            VALUES
-          </span>
+          <span className='table-cell align-middle text-text-green'>VALUES</span>
         </div>
       </div>
       <div className='text-center'>
@@ -164,10 +154,7 @@ export default function Home() {
         </div>
       </div>
       {/* ブロック5 */}
-      <div
-        className='-mt-64 bg-no-repeat bg-cover bg-bg-future'
-        style={{ height: '570px' }}
-      >
+      <div className={`-mt-64 bg-no-repeat bg-cover bg-bg-future ${styles.h570}`}>
         <div className='text-center'>
           <div className='inline-block mt-80 w-2/3 h-52' id='future'>
             <div className='flex h-full'>
@@ -176,9 +163,7 @@ export default function Home() {
                   <span className='table-cell pr-2 text-2xl font-bold tracking-widest align-middle'>
                     3年後にやりたいこと
                   </span>
-                  <span className='table-cell align-middle' style={{ color: '#008c8d' }}>
-                    FUTURE
-                  </span>
+                  <span className='table-cell align-middle text-text-green'>FUTURE</span>
                 </div>
                 <div className='pr-6 mt-6 text-left'>
                   3年後は、会社の代表取締役社長として、社員と本気の　毎日を過ごしています。人と人を繋げて「楽しさ」や　　「本気」を創出し、あらゆる個人が輝く社会、そして本気の人を応援し合えるような社会の実現に向けて、価値提供を行っています。メディアにも多数取り上げられ、会社としても個人としても、注目されます。
