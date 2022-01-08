@@ -10,7 +10,7 @@ let indexCt = new IndexCt();
 
 export default function Index() {
   return (
-    <Layout>
+    <Layout title={indexCt.pageTitle} description={indexCt.pageDescription}>
       {/* ブロック1 */}
       <div className={'flex h-[500px] bg-header-green'}>
         <div className='flex justify-center items-center w-6/12 tracking-widest text-white'>

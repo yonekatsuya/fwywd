@@ -4,6 +4,10 @@ class IndexCt extends Component {
   constructor(props) {
     super(props);
 
+    this.pageTitle = '米勝矢の自己紹介ページ';
+
+    this.pageDescription = '米勝矢の自己紹介ページです。'
+
     this.abouts = [
       [
         '/image/about-1.png',
