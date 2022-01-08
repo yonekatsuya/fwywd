@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 
-class IndexCt extends Component {
+export default class IndexCt extends Component {
   constructor(props) {
     super(props);
 
     this.pageTitle = '米勝矢の自己紹介ページ';
 
-    this.pageDescription = '米勝矢の自己紹介ページです。'
+    this.pageDescription = '米勝矢の自己紹介ページです。';
 
     this.abouts = [
       [
@@ -64,5 +64,3 @@ class IndexCt extends Component {
       '3年後は、会社の代表取締役社長として、社員と本気の　毎日を過ごしています。人と人を繋げて「楽しさ」や　　「本気」を創出し、あらゆる個人が輝く社会、そして本気の人を応援し合えるような社会の実現に向けて、価値提供を行っています。メディアにも多数取り上げられ、会社としても個人としても、注目されます。';
   }
 }
-
-export default IndexCt;

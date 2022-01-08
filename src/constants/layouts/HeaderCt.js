@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class HeaderCt extends Component {
+export default class HeaderCt extends Component {
   constructor(props) {
     super(props);
 
@@ -12,5 +12,3 @@ class HeaderCt extends Component {
     ];
   }
 }
-
-export default HeaderCt;
