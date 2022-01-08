@@ -12,7 +12,7 @@ export default function AboutMeCard(props) {
           alt='私を表す画像'
         />
       </div>
-      <div className='pt-5 text-xl font-bold tracking-widest text-center text-text-green'>
+      <div className='pt-5 text-xl font-bold tracking-widest text-center text-base-green'>
         {props.title}
       </div>
       <div className='flex justify-center'>

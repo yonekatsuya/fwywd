@@ -4,13 +4,13 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'bg-about': "url('/image/bg-about.png')",
-        'bg-skills': "url('/image/bg-skills.png')",
-        'bg-future': "url('/image/bg-future.png')",
-        future: "url('/image/future.png')",
+        'about-me-img': "url('/image/bg-about.png')",
+        'skills-img': "url('/image/bg-skills.png')",
+        'future-img': "url('/image/bg-future.png')",
+        'future-card-img': "url('/image/future.png')",
       },
       colors: {
-        'text-green': '#008c8d',
+        'base-green': '#008c8d',
         'thin-green': '#c5eaea',
         'dark-green': '#2bb9ba',
         'footer-black': '#262c3a',
@@ -18,5 +18,4 @@ module.exports = {
       },
     },
   },
-  plugins: [],
 };

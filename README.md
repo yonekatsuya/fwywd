@@ -1,13 +1,13 @@
 # 概要
 
-fwywd 1次試験　自己紹介サイト
+fwywd 1 次試験　自己紹介サイト
 
 ## Requirement
 
 必要なライブラリ
 
 - react 17.0.2
-- next.js 8.3.0
+- next.js 12.0.7
 - tailwindcss 3.0.0
 
 ## Installation
@@ -22,7 +22,7 @@ npm install
 
 ## Usage
 
-DEMOの実行方法
+DEMO の実行方法
 
 ```bash
 npm dev
@@ -30,7 +30,7 @@ npm dev
 
 ## Note
 
-デプロイの環境はVercelです。
+デプロイの環境は Vercel です。
 
 ## Author
 

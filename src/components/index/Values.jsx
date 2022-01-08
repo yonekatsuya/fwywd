@@ -11,7 +11,7 @@ export default function Values() {
           <span className='table-cell pr-2 text-2xl font-bold tracking-widest align-middle'>
             価値観
           </span>
-          <span className='table-cell text-text-green align-middle'>VALUES</span>
+          <span className='table-cell text-base-green align-middle'>VALUES</span>
         </div>
       </div>
       <div className='text-center'>
