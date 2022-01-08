@@ -18,6 +18,7 @@
               "order": "asc"
             }
           }
-        ]
+        ],
+        "import/no-unresolved": "off"
     }
 }
