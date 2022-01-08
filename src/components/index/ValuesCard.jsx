@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-export default function Values(props) {
+export default function ValuesCard(props) {
   if (props.border_flg == true) {
     let style = { borderRight: '1px solid #6bc2c3' };
   } else {
