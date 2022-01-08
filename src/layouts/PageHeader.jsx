@@ -1,7 +1,7 @@
+import HeaderCt from 'constants/layouts/HeaderCt';
+import MenuList from 'components/pageHeader/MenuList';
 import Image from 'next/image';
 import Link from 'next/link';
-import MenuList from '../components/pageHeader/MenuList';
-import HeaderCt from '../constants/layouts/HeaderCt';
 
 let headerCt = new HeaderCt();
 

@@ -1,10 +1,10 @@
+import IndexCt from 'constants/IndexCt';
+import AboutSelf from 'components/AboutSelf';
+import Progress from 'components/Progress';
+import Values from 'components/Values';
+import Layout from 'layouts/Layout';
 import { urlObjectKeys } from 'next/dist/shared/lib/utils';
 import Image from 'next/image';
-import AboutSelf from '../components/AboutSelf';
-import Progress from '../components/Progress';
-import Values from '../components/Values';
-import IndexCt from '../constants/IndexCt';
-import Layout from '../layouts/Layout';
 
 let indexCt = new IndexCt();
 
