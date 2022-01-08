@@ -5,10 +5,11 @@
     "dev": "next dev",
     "build": "next build && next export && next-sitemap --config next-sitemap.js",
     "start": "next start",
-    "lint": "next lint",
+    "lint": "next lint --dir src",
     "format": "prettier --write --ignore-path .gitignore './**/*.{js,jsx,ts,tsx,json}'",
     "lint:style": "stylelint '**/*.{css,scss,sass}'",
-    "lint:style:fix": "stylelint --fix '**/*.{css,scss,sass}'"
+    "lint:style:fix": "stylelint --fix '**/*.{css,scss,sass}'",
+    "prepare": "husky install"
   },
   "dependencies": {
     "next": "latest",
@@ -22,6 +23,8 @@
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-tailwindcss": "^3.0.2",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.1.7",
     "next-sitemap": "^1.6.245",
     "postcss": "^8.4.4",
     "prettier": "^2.5.1",
@@ -39,5 +42,14 @@
     "jsxSingleQuote": true,
     "printWidth": 100,
     "semi": true
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{css,less,sass,scss}": [
+      "stylelint --fix"
+    ]
   }
 }
