@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import PageFooter from './PageFooter';
 import PageHeader from './PageHeader';
 
-class Layout extends Component {
+export default class Layout extends Component {
   render() {
     return (
       <>
@@ -20,5 +20,3 @@ class Layout extends Component {
     );
   }
 }
-
-export default Layout;

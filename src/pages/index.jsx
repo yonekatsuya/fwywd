@@ -6,7 +6,6 @@ import PageMain from 'components/index/PageMain';
 import Skills from 'components/index/Skills';
 import Values from 'components/index/Values';
 import Layout from 'layouts/Layout';
-import { urlObjectKeys } from 'next/dist/shared/lib/utils';
 import Image from 'next/image';
 
 let indexCt = new IndexCt();
