@@ -40,7 +40,7 @@ export default function Index() {
               <span className='table-cell pr-2 text-2xl font-bold tracking-widest align-middle'>
                 私について
               </span>
-              <span className='table-cell align-middle text-text-green'>ABOUT</span>
+              <span className='table-cell text-text-green align-middle'>ABOUT</span>
             </div>
           </div>
           <div className={'flex justify-between h-[84%]'}>
@@ -71,7 +71,7 @@ export default function Index() {
                 <span className='table-cell pr-2 text-2xl font-bold tracking-widest align-middle'>
                   スキル
                 </span>
-                <span className='table-cell align-middle text-text-green'>SKILLS</span>
+                <span className='table-cell text-text-green align-middle'>SKILLS</span>
               </div>
               <div className='mt-4'>{indexCt.skillDesc}</div>
               <div className='p-7 pr-10 mt-4 w-full h-72 bg-white'>
@@ -91,7 +91,7 @@ export default function Index() {
           <span className='table-cell pr-2 text-2xl font-bold tracking-widest align-middle'>
             価値観
           </span>
-          <span className='table-cell align-middle text-text-green'>VALUES</span>
+          <span className='table-cell text-text-green align-middle'>VALUES</span>
         </div>
       </div>
       <div className='text-center'>
@@ -115,7 +115,7 @@ export default function Index() {
                   <span className='table-cell pr-2 text-2xl font-bold tracking-widest align-middle'>
                     3年後にやりたいこと
                   </span>
-                  <span className='table-cell align-middle text-text-green'>FUTURE</span>
+                  <span className='table-cell text-text-green align-middle'>FUTURE</span>
                 </div>
                 <div className='pr-6 mt-6 text-left'>{indexCt.futureDesc}</div>
               </div>
