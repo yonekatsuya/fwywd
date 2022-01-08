@@ -1,4 +1,4 @@
-export default function Progress(props) {
+export default function SkillsProgress(props) {
   return (
     <>
       <div className='text-text-green'>{props.skill}</div>
