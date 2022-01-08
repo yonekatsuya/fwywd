@@ -1,0 +1,55 @@
+{
+  "name": "fwywd",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build && next export && next-sitemap --config next-sitemap.js",
+    "start": "next start",
+    "lint": "next lint --dir src",
+    "format": "prettier --write --ignore-path .gitignore './**/*.{js,jsx,ts,tsx,json}'",
+    "lint:style": "stylelint '**/*.{css,scss,sass}'",
+    "lint:style:fix": "stylelint --fix '**/*.{css,scss,sass}'",
+    "prepare": "husky install"
+  },
+  "dependencies": {
+    "next": "latest",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.0",
+    "eslint": "^8.6.0",
+    "eslint-config-next": "^12.0.7",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-tailwindcss": "^3.0.2",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.1.7",
+    "next-sitemap": "^1.6.245",
+    "postcss": "^8.4.4",
+    "prettier": "^2.5.1",
+    "react-scroll": "^1.8.4",
+    "sass": "^1.45.2",
+    "stylelint": "^14.2.0",
+    "stylelint-config-standard": "^24.0.0",
+    "stylelint-order": "^5.0.0",
+    "tailwindcss": "^3.0.0"
+  },
+  "prettier": {
+    "trailingComma": "all",
+    "tabWidth": 2,
+    "singleQuote": true,
+    "jsxSingleQuote": true,
+    "printWidth": 100,
+    "semi": true
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{css,less,sass,scss}": [
+      "stylelint --fix"
+    ]
+  }
+}
